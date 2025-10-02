@@ -3,8 +3,8 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime, timedelta
 from sqlalchemy import text
-import backend.functions as f
-import backend.queries as q
+import functions as f
+import queries as q
 
 def hash_password(password: str) -> str:
     """Hash a password using bcrypt."""

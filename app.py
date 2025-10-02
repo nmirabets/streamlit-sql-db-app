@@ -1,5 +1,5 @@
 import streamlit as st
-import backend.auth
+import auth
 
 # Page configuration
 st.set_page_config(
@@ -13,7 +13,7 @@ st.set_page_config(
 st.title("🏢 Employee Management System")
 
 # Check if user is authenticated
-if not backend.auth.is_authenticated():
+if not auth.is_authenticated():
     st.info("Welcome to the Employee Management System!")
     st.markdown("### 🔐 Please log in to continue")
     

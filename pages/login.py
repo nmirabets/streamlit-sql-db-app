@@ -14,7 +14,7 @@ if auth.is_authenticated():
     st.success("You are already logged in!")
     st.info("Click below to go to the dashboard")
     if st.button("Go to Dashboard", type="primary"):
-        st.switch_page("dashboard.py")
+        st.switch_page("pages/dashboard.py")
     st.stop()
 
 # Show login and registration tabs
