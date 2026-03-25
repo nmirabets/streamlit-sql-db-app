@@ -6,7 +6,7 @@ import streamlit as st
 
 # Load environment variables (for our database credentials)
 load_dotenv()
-DATABASE_URL = os.getenv('DATABASE_URL')
+DATABASE_URL = os.getenv('DATABASE_URL').replace('postgresql://', 'postgresql+psycopg://', 1)
 
 
 def test_connection(engine):
